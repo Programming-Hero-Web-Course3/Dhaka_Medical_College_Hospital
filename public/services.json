@@ -1,0 +1,65 @@
+    [
+        {
+          "id": "1",
+          "name": "Pediatrics",
+          "image": "https://i.ibb.co/QbjNz8R/general-pediatrics.jpg",
+          "description": "At DMC Health, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+          "phone": "+1 (965) 451-2242"
+        },
+        {
+          "id": "2",
+          "name": "Cardiology",
+          "image": "https://i.ibb.co/3CMG1nB/Surgeons-performing-surgery-in-an-operating-room.jpg",
+          "description": "Our comprehensive heart services include general and preventive cardiology, cardiac testing and imaging, specialized cardiology and cardiac surgery.",
+          "phone": "+1 (924) 428-3584"
+        },
+        {
+          "id": "3",
+          "name": "Neurosurgery",
+          "image": "https://i.ibb.co/DQjxQ5Y/neurosergury.jpg",
+          "description": "Our top-rated neurosurgeons use advanced imaging and surgical techniques to treat neurological conditions, such as brain tumors and traumatic brain injury.",
+          "phone": "+1 (815) 537-3516"
+        },
+        {
+          "id": "4",
+          "name": "Cancer Care",
+          "image": "https://i.ibb.co/wdCdC6c/cancer-services.jpg",
+          "description": "DMC Health patients can expect comprehensive and individualized cancer care, delivered in convenient locations across Southern California.",
+          "phone": "+1 (814) 578-3200"
+        },
+        {
+          "id": "5",
+          "name": "Brain Cancer",
+          "image": "https://i.ibb.co/K601d1M/brain-cancer.jpg",
+          "description": "Recognized as a top 10 hospital for brain cancer care, the DMC Health Brain Tumor Center offers the most medically advanced treatments and leading-edge research.",
+          "phone": "+1 (927) 459-2214"
+        },
+        {
+          "id": "6",
+          "name": "Breast Cancer",
+          "image": "https://i.ibb.co/yVddwn9/breast-cancer.jpg",
+          "description": "Our world-renowned breast cancer experts deliver individualized, comprehensive and compassionate care to breast cancer patients.",
+          "phone": "+1 (899) 486-2902"
+        },
+        {
+          "id": "7",
+          "name": "Anesthesiology",
+          "image": "https://i.ibb.co/ZM1JDg8/anesthetiology.jpg",
+          "description": "Our anesthesiology team uses the safest, highest-quality techniques to offer comprehensive pain control.",
+          "phone": "+1 (999) 410-2124"
+        },
+        {
+          "id": "8",
+          "name": "Emergency Medicine",
+          "image": "https://i.ibb.co/GkdYdb8/emergency-medicine.jpg",
+          "description": "Our emergency medicine experts deliver lifesaving treatments for serious injuries and illnesses. We use the latest technology to provide advanced emergency care.",
+          "phone": "+1 (880) 588-2526"
+        },
+        {
+          "id": "9",
+          "name": "Hospitalists",
+          "image": "https://i.ibb.co/7S5Vq33/hospitalists.jpg",
+          "description": "Hospitalists are internal medicine physicians who care for patients while they’re in the hospital. They deliver seamless, coordinated care through close collaboration with your primary care doctor.",
+          "phone": "+1 (817) 486-2620"
+        }
+      ]
