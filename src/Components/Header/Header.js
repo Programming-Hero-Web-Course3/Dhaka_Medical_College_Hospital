@@ -7,17 +7,18 @@ const Header = () => {
   const {user,logOut} = useAuth();
     return (
           <>
+          
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-    <Container>
+   <Container>
     <Navbar.Brand href="#home"> Dhaka Medical College and Hospital </Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <Nav.Link href="/home#home">Home</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#services">Services</Nav.Link>
-      <Nav.Link as={HashLink} to ="/home#aboutUs">About Us</Nav.Link>
+      <Nav.Link as={HashLink} to ="/home#aboutUs">About</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#students">Feedback</Nav.Link>
-      {/* <Nav.Link as={HashLink} to ="/home#students">Faqs</Nav.Link> */}
-      <Nav.Link as={HashLink} to ="/contacts">Contact Us</Nav.Link>
+      <Nav.Link as={HashLink} to ="/faqs">Faqs</Nav.Link>
+      <Nav.Link as={HashLink} to ="/contacts">Contact</Nav.Link>
       {
         user?.email ?
         <Button className="me-2" onClick={logOut} variant ="light">Log out</Button> :
@@ -29,6 +30,7 @@ const Header = () => {
     </Navbar.Collapse>
     </Container>
   </Navbar>  
+
 </>
            
       

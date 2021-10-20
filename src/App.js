@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Contacts from './Components/Contacts/Contacts';
 import Details from './Components/Details/Details';
+import Faqs from './Components/Faqs/Faqs';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
@@ -29,6 +30,9 @@ function App() {
               <PrivateRoute path="/Details/:serviceId">
                 <Details></Details>
               </PrivateRoute>
+              <Route path="/faqs">
+                <Faqs></Faqs>
+              </Route>
               <PrivateRoute path="/Contacts">
                 <Contacts></Contacts>
               </PrivateRoute>
