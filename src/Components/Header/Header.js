@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
 
@@ -17,18 +16,16 @@ const Header = () => {
       <Nav.Link as={HashLink} to ="/home#services">Services</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#aboutUs">About Us</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#students">Feedback</Nav.Link>
-      <Nav.Link as={HashLink} to ="/home#contacts">Contact Us</Nav.Link>
+      {/* <Nav.Link as={HashLink} to ="/home#students">Faqs</Nav.Link> */}
+      <Nav.Link as={HashLink} to ="/contacts">Contact Us</Nav.Link>
       {
         user?.email ?
         <Button className="me-2" onClick={logOut} variant ="light">Log out</Button> :
         <Nav.Link as={HashLink} to ="/register">Log in</Nav.Link>
       }
       <Navbar.Text>
-        Signed in as : <a href="#login">{user?.displayName}</a>
+        Signed in as : <a style={{textDecoration:"none" }} href="#login">{user?.displayName}</a>
       </Navbar.Text>
-      {
-        // user?.email? <img src={photoURL} alt="" /> : <img src="" alt="" />
-      }
     </Navbar.Collapse>
     </Container>
   </Navbar>  

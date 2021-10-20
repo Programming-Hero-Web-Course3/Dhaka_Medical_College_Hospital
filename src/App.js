@@ -29,7 +29,7 @@ function App() {
               <PrivateRoute path="/Details/:serviceId">
                 <Details></Details>
               </PrivateRoute>
-              <PrivateRoute path="/Contacts/:contacts">
+              <PrivateRoute path="/Contacts">
                 <Contacts></Contacts>
               </PrivateRoute>
               <Route path="*">

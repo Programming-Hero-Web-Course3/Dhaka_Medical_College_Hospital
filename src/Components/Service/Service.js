@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useService from '../../hooks/useService';
 import './service.css'
 
-const Service = ({service}) => {
+const Service = ({service}) => {  
     const {id,name,image,description}= service;
     return (
             <div className="service pb-3">
