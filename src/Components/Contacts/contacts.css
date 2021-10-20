@@ -1,0 +1,11 @@
+.contact{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contact-design{
+    border: 5px solid lightgreen;
+    border-radius: 50px;
+    width: 600px;
+    
+}

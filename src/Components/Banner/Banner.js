@@ -44,8 +44,8 @@ const Banner = () => {
       <p className="text-dark">Covid-19,TB,Blood,Skin and various Tests Are Available Here</p>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel>
-</>
+            </Carousel>
+        </>
         
     );
 };

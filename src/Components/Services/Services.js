@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 import './Services.css'
-
 const Services = () => {
     const [services,setServices] =useState([]);
 
@@ -9,14 +8,13 @@ const Services = () => {
        fetch('./services.json')
        .then(res=>res.json())
        .then(data=>setServices(data))
-    }, [])
-   
+    }, [])   
     return (
        
         <div id="services">
-
-            <h1 className="text-primary mt-5">Our Services</h1>
-            <div>-------------******------------</div>
+              <div className="services-margin">----******----</div>
+            <h1 className="text-primary">Our Services</h1>
+            
            
            <div className="service-container">
            {

@@ -13,9 +13,9 @@ const Details = () => {
     }, [])
     return (
         <div>
-            <h1>this is from details{serviceId}</h1>
+            <h1>this is from Service id of : {serviceId}</h1>
             <h5 className="card-title">{details?.name}</h5>
-            <Link to ="/home"><button>Go to Home</button></Link>
+            <Link to ="/home"><button className="btn btn-info">Go to Home</button></Link>
         </div>
     );
 };

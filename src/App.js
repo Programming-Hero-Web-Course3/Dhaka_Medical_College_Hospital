@@ -1,6 +1,7 @@
 import {BrowserRouter as Router,Route,Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Contacts from './Components/Contacts/Contacts';
 import Details from './Components/Details/Details';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -27,6 +28,9 @@ function App() {
               </Route>
               <PrivateRoute path="/Details/:serviceId">
                 <Details></Details>
+              </PrivateRoute>
+              <PrivateRoute path="/Contacts/:contacts">
+                <Contacts></Contacts>
               </PrivateRoute>
               <Route path="*">
                 <NotFound></NotFound>

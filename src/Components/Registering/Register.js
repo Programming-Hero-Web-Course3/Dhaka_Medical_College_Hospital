@@ -1,6 +1,7 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider,createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
 import React, { useState } from 'react';
 import useAuth from "../../hooks/useAuth";
+import "./Register.css"
  
 
 
@@ -117,13 +118,10 @@ const Register = () => {
   }
   return (
     <div>
-      <h1>this is from register</h1>
-      <h2>Name : {user?.displayName}{name}</h2>
-      <h3>Email : {user.email}{email}</h3>
-      <h3>Password : {user.password}{password}</h3>
-      <img src='{user.photoURL}' alt="" />
-
-  <form  onSubmit={handleRegistration}>
+      <h1>Keep In touch With Us. </h1>
+      <br /> <br />
+      {/* Register or Log in with any Email */}
+  <form  onSubmit={handleRegistration} className="w-50 mx-auto">
       <h3 className="text-primary">Please {isLogIn ? 'Log in': 'Register'}</h3>
     
          {/* name section */}
@@ -153,19 +151,29 @@ const Register = () => {
         </div>
 
         {/* islogin section */}
-        <div  className="form-check">
-    <input onChange={toggleLogin} type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" htmlFor="exampleCheck1">Already Registered ?</label>
+        <div  onChange={toggleLogin}  className="form-check">
+            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+
+            <label className="form-check-label" htmlFor="exampleCheck1">Already Registered ?</label>
+    
         </div>
-  
+        <br /> 
         {/* submission and upadting section */}
         <button type="submit" className="btn btn-primary">{isLogIn ? 'Log in' : 'Register'}</button>
 
   </form>
 
   <br /><br />
+  {/* register or log in with Gmail */}
+        <h1>Want to Log in With Google?</h1>
+        <br />
+      <button className="btn btn-info" onClick={handleGoogleSignIn}>Google sign in</button>
 
-      <button onClick={handleGoogleSignIn}>google sign in</button>
+      <br /> <br />
+      {/* <h2>Name : {user?.displayName}{name}</h2>
+      <h3>Email : {user.email}{email}</h3>
+      <h3>Password : {user.password}{password}</h3> */}
+      
     </div>
   );
 };

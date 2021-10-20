@@ -10,28 +10,28 @@ const Header = () => {
           <>
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
     <Container>
-    <Navbar.Brand href="#home"> Dhaka Medical College </Navbar.Brand>
+    <Navbar.Brand href="#home"> Dhaka Medical College and Hospital </Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <Nav.Link href="/home#home">Home</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#services">Services</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#aboutUs">About Us</Nav.Link>
       <Nav.Link as={HashLink} to ="/home#students">Feedback</Nav.Link>
+      <Nav.Link as={HashLink} to ="/home#contacts">Contact Us</Nav.Link>
       {
         user?.email ?
-        <Button onClick={logOut} variant ="light">Log out</Button> :
+        <Button className="me-2" onClick={logOut} variant ="light">Log out</Button> :
         <Nav.Link as={HashLink} to ="/register">Log in</Nav.Link>
       }
-      {/* <Nav.Link as={HashLink} to ="/register">Login</Nav.Link> */}
       <Navbar.Text>
-        Signed in as: <a href="#login">{user?.displayName}</a>
+        Signed in as : <a href="#login">{user?.displayName}</a>
       </Navbar.Text>
+      {
+        // user?.email? <img src={photoURL} alt="" /> : <img src="" alt="" />
+      }
     </Navbar.Collapse>
     </Container>
-  </Navbar>
-  <br />
-  
-  
+  </Navbar>  
 </>
            
       
