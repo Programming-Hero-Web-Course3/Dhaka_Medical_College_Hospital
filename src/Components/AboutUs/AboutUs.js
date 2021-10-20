@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () => {
     return (
         <div id="aboutUs" >
-            <h1>About Us</h1>
+            <h1>About Us changed</h1>
             <br /><br />
             <p>
                 Dhaka Medical College and Hospital (abbreviated DMCH) is a public medical college and hospital located in Dhaka, the capital city of Bangladesh. It houses medical school as well as a tertiary care hospital on one campus.
